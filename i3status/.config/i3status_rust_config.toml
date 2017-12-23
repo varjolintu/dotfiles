@@ -1,0 +1,31 @@
+theme = "gruvbox-dark"
+icons = "none"
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = "/"
+info_type = "total"
+unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mum}MB/{MTm}MB({Mup}%)"
+format_swap = ""
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "weather"
+service = { name = "openweathermap", api_key = "af7bfe22287c652d032a3064ffa44088", city_id = "643493", units = "metric" }
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
