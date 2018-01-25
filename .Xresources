@@ -1,9 +1,10 @@
 URxvt.intensityStyles: false
 URxvt.scrollBar: false
 
-URxvt*font:		xft:menlo:pixelsize=9:antialias=true:hinting=true,style=regular
-URxvt*boldFont:		xft:menlo:pixelsize=9:antialias=true, style=regular
-URxvt.letterSpace:	-1
+#URxvt*font:		xft:menlo:pixelsize=9:antialias=true:hinting=true,style=regular
+#URxvt*boldFont:		xft:menlo:pixelsize=9:antialias=true,style=regular
+URxvt*font:		xft:Menlo for Powerline:pixelsize=9:antialias=true,style=regular
+#URxvt.letterSpace:	-2
 
 urxvt.background:       black
 urxvt.foreground:       white
