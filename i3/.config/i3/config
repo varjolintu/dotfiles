@@ -31,13 +31,13 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec --no-startup-id urxvt -name normal
 
 # draw terminal
 bindsym $mod+z exec --no-startup-id /home/humanoid/draw.sh
 
 # start rofi
-bindsym $super+space exec rofi -show run
+bindsym $mod+space exec rofi -show run
 
 # disable alt+a
 #bindsym $mod+a nop foo
@@ -97,7 +97,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 #bindsym $mod+a focus parent
@@ -169,17 +169,18 @@ bar {
 	position top
 	status_command ~/repos/i3status-rust/target/release/i3status-rs ~/.config/i3status/i3status_rust_config.toml
 	tray_output primary
-	font pango:menlo 8
+	#font pango:menlo 8
+	font xft:scientifica 9
 	strip_workspace_numbers yes
 	
 	colors {
 	    background #33333399
-		statusline #dddddddd
-		focused_workspace  #444444 #333333 #ffffff
-		active_workspace   #444444 #5f676a #ffffff
-		inactive_workspace #333333 #222222 #888888
-		urgent_workspace   #2f343a #700000 #ffffff
-		binding_mode       #2f343a #700000 #ffffff
+	    statusline #dddddddd
+	    focused_workspace  #444444 #333333 #ffffff
+	    active_workspace   #444444 #5f676a #ffffff
+	    inactive_workspace #333333 #222222 #888888
+	    urgent_workspace   #2f343a #700000 #ffffff
+	    binding_mode       #2f343a #700000 #ffffff
 	}
 }
 
@@ -212,7 +213,7 @@ set $WS9 九
 set $WS10 十
 
 
-exec --no-startup-id feh --bg-scale ~/Downloads/mountains.png
+exec --no-startup-id feh --bg-scale ~/Downloads/green.jpg
 
 #floating_minimum_size 1024 x 768
 for_window [class="tvp-svn-helper"] floating enable

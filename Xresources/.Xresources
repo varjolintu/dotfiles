@@ -1,0 +1,120 @@
+#URxvt*font:		xft:Menlo for Powerline:pixelsize=9:antialias=true,style=regular
+URxvt.font:			xft:scientifica:size=11
+URxvt.letterSpace:	2
+URxvt.thickness:	5
+
+urxvt.background:       black
+urxvt.foreground:       white
+urxvt.scrollBar:        false
+urxvt.tintColor:        white
+urxvt.fading:           35
+urxvt.fadeColor:        black
+urxvt.shading:          35
+urxvt.inheritPixmap:    true
+urxvt.pointerColor:     black
+urxvt.pointerColor2:    white
+Urxvt.intensityStyles:  false
+urxvt.transparent:		true
+
+URxvt.internalBorder:	20
+
+# For compton -Cc
+#URxvt*depth:		32
+#URxvt*background:	rgba:0230/0170/0210/0100
+
+URxvt.perl-ext-common:	default,matcher
+URxvt.url-launcher:		/usr/bin/firefox
+URxvt.matcher.button:	1
+
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    true
+Xft.antialias:  true
+Xft.rgba:       rgb
+
+! colors
+
+#define base00	#1d2021
+#define base05	#d5c4a1
+
+! colors
+*.cursorColor:	base05
+*.background:	base00
+*.foreground:	base05
+
+! black
+*.color0:		base00
+*.color8:       #928374
+
+! red
+*.color1:       #cc241d
+*.color9:       #fb4934
+
+! green
+*.color2:       #98971a
+*.color10:      #b8bb26
+
+! yellow
+*.color3:       #d79921
+*.color11:      #fabd2f
+
+! blue
+*.color4:       #458588
+*.color12:      #83a598
+
+! magenta
+*.color5:       #b16286
+*.color13:      #d3869b
+
+! cyan
+*.color6:       #689d6a
+*.color14:      #8ec07c
+
+! white
+*.color7:       #a89984
+*.color15:      #ebdbb2
+
+! 256 color resources
+*.color24:  #076678
+*.color66:  #427b58
+*.color88:  #9d0006
+*.color96:  #8f3f71
+*.color100: #79740e
+*.color108: #8ec07c
+*.color109: #83a598
+*.color130: #af3a03
+*.color136: #b57614
+*.color142: #b8bb26
+*.color167: #fb4934
+*.color175: #d3869b
+*.color208: #fe8019
+*.color214: #fabd2f
+*.color223: #ebdbb2
+*.color228: #f4e8ba
+*.color229: #fdf4c1
+*.color230: #ffffc8
+*.color234: #1d2021
+*.color235: #282828
+*.color236: #32302f
+*.color237: #3c3836
+*.color239: #504945
+*.color241: #665c54
+*.color243: #7c6f64
+*.color244: #928374
+*.color245: #928374
+*.color246: #a89984
+*.color248: #bdae93
+*.color250: #d5c4a1
+
+! rofi theme
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: argb:d0282828, #a89984, #a89984
+!                  bg             fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: argb:d0282828, #ebdbb2, argb:d032302f, #665c54, #fbf1c7
+rofi.color-active: argb:d0d79921, #282828, argb:d0d79921, #fabd2f, #282828
+rofi.color-urgent: argb:d0cc241d, #282828, argb:d0cc241d, #fb4934, #282828
+
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
