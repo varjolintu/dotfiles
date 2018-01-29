@@ -1,26 +1,21 @@
 #URxvt*font:		xft:Menlo for Powerline:pixelsize=9:antialias=true,style=regular
-URxvt.font:			xft:scientifica:size=11
-URxvt.letterSpace:	2
-URxvt.thickness:	5
+URxvt.font:             xft:scientifica:size=11
+URxvt.letterSpace:      2
+URxvt.thickness:        5
 
-urxvt.background:       black
-urxvt.foreground:       white
-urxvt.scrollBar:        false
-urxvt.tintColor:        white
-urxvt.fading:           35
-urxvt.fadeColor:        black
-urxvt.shading:          35
-urxvt.inheritPixmap:    true
-urxvt.pointerColor:     black
-urxvt.pointerColor2:    white
-Urxvt.intensityStyles:  false
-urxvt.transparent:		true
-
+URxvt.scrollBar:        false
+#URxvt.tintColor:        white
+#URxvt.fading:           80
+#URxvt.fadeColor:        #1d2021
+#URxvt.shading:          2
+#URxvt.inheritPixmap:    true
+#URxvt.intensityStyles:  false
+#URxvt.transparent:		true
 URxvt.internalBorder:	20
 
 # For compton -Cc
-#URxvt*depth:		32
-#URxvt*background:	rgba:0230/0170/0210/0100
+#URxvt*depth:           32
+#URxvt*background:      rgba:0230/0170/0210/0100
 
 URxvt.perl-ext-common:	default,matcher
 URxvt.url-launcher:		/usr/bin/firefox
@@ -44,7 +39,7 @@ Xft.rgba:       rgb
 *.foreground:	base05
 
 ! black
-*.color0:		base00
+*.color0:       base00
 *.color8:       #928374
 
 ! red
