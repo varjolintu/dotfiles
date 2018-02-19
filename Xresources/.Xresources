@@ -1,6 +1,7 @@
 #URxvt*font:		xft:Menlo for Powerline:pixelsize=9:antialias=true,style=regular
-URxvt.font:             xft:scientifica:size=11
-URxvt.letterSpace:      2
+#URxvt.font:             xft:scientifica:size=11:antialias=true
+URxvt.font:		xft:Hack:Regular:pixelsize=9:antialias=true:hinting=true
+#URxvt.letterSpace:      2
 URxvt.thickness:        5
 
 URxvt.scrollBar:        false
