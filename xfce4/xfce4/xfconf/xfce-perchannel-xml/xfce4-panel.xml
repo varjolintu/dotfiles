@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="empty"/>
+  <property name="panels" type="empty">
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=1280;y=16"/>
+      <property name="length" type="empty"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="24"/>
+      <property name="background-style" type="empty"/>
+      <property name="background-alpha" type="uint" value="79"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="4"/>
+        <value type="int" value="2"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="9"/>
+        <value type="int" value="7"/>
+        <value type="int" value="3"/>
+        <value type="int" value="8"/>
+        <value type="int" value="11"/>
+        <value type="int" value="10"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="button-icon" type="string" value="indicator-lunar"/>
+      <property name="button-title" type="string" value=""/>
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="show-generic-names" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15512779382.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="true"/>
+    </property>
+    <property name="plugin-3" type="string" value="weather">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-4" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="15512812424.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="true"/>
+    </property>
+    <property name="plugin-5" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="15512813115.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="false"/>
+      <property name="show-label" type="bool" value="true"/>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="show-handle" type="empty"/>
+      <property name="middle-click" type="empty"/>
+      <property name="items" type="array">
+        <value type="string" value="15512813691.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="empty">
+      <property name="expand" type="empty"/>
+      <property name="style" type="empty"/>
+    </property>
+    <property name="plugin-8" type="empty">
+      <property name="names-visible" type="array">
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="network"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="keepassxc"/>
+        <value type="string" value="update-notifier"/>
+        <value type="string" value="mintupdate.py"/>
+      </property>
+      <property name="show-frame" type="empty"/>
+      <property name="size-max" type="uint" value="14"/>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15512813852.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="true"/>
+    </property>
+    <property name="plugin-10" type="string" value="clock"/>
+    <property name="plugin-11" type="empty">
+      <property name="enable-keyboard-shortcuts" type="empty"/>
+      <property name="enable-mpris" type="empty"/>
+      <property name="mixer-command" type="empty"/>
+      <property name="show-notifications" type="empty"/>
+      <property name="mpris-players" type="string" value="spotify;xplayer"/>
+    </property>
+    <property name="plugin-12" type="empty">
+      <property name="digital-format" type="empty"/>
+    </property>
+  </property>
+</channel>

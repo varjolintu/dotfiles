@@ -31,10 +31,13 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec --no-startup-id urxvt -name normal
+
+# draw terminal
+bindsym $mod+z exec --no-startup-id /home/humanoid/draw.sh
 
 # start rofi
-bindsym $super+space exec rofi -show run
+bindsym $mod+space exec rofi -show run
 
 # disable alt+a
 #bindsym $mod+a nop foo
@@ -43,7 +46,7 @@ bindsym $super+space exec rofi -show run
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -94,7 +97,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 #bindsym $mod+a focus parent
@@ -166,29 +169,28 @@ bar {
 	position top
 	status_command ~/repos/i3status-rust/target/release/i3status-rs ~/.config/i3status/i3status_rust_config.toml
 	tray_output primary
-	font pango:menlo 8
+	#font pango:menlo 8
+	font xft:scientifica 9
 	strip_workspace_numbers yes
 	
 	colors {
 	    background #33333399
-		statusline #dddddddd
-		focused_workspace  #444444 #333333 #ffffff
-		active_workspace   #444444 #5f676a #ffffff
-		inactive_workspace #333333 #222222 #888888
-		urgent_workspace   #2f343a #700000 #ffffff
-		binding_mode       #2f343a #700000 #ffffff
+	    statusline #dddddddd
+	    focused_workspace  #444444 #333333 #d5c4a1
+	    active_workspace   #444444 #5f676a #ffffff
+	    inactive_workspace #333333 #222222 #888888
+	    urgent_workspace   #2f343a #700000 #ffffff
+	    binding_mode       #2f343a #700000 #ffffff
 	}
 }
 
 for_window [class="^.*"] border pixel 1
 
-gaps outer 0
+gaps outer 2
 gaps inner 6
 
-
-# class                 border  backgr. text    indicator child_border
-client.focused          #444444 #285577 #ffffff #444444   #282828
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused          #444444 #285577 #ffffff #444444   #444444
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #000000
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #343433 #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
@@ -209,8 +211,9 @@ set $WS9 九
 set $WS10 十
 
 
-exec --no-startup-id feh --bg-scale ~/fox_darker.jpg
+exec --no-startup-id feh --bg-scale ~/Downloads/green.jpg
 
 #floating_minimum_size 1024 x 768
 for_window [class="tvp-svn-helper"] floating enable
 for_window [class="cmake-gui"] floating enable
+for_window [class="URxvt" instance="floating"] floating enable

@@ -8,8 +8,9 @@ alias = "/"
 info_type = "total"
 unit = "GB"
 interval = 20
-warning = 20.0
-alert = 10.0
+warning = 2.0
+alert = 1.0
+show_percentage = true
 
 [[block]]
 block = "memory"
